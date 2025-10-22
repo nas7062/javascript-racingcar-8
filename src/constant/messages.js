@@ -9,3 +9,9 @@ export const CAR_VALIDATE = {
   NAME_ZERO: "[ERROR] 공백으로 된 자동차 이름이 있습니다.",
   NAME_EXCEED: "[ERROR] 자동차 이름은 5글자 이하여야 합니다.",
 };
+
+export const COUNT_VALIDATE = {
+  NAN_NUMBER: "[ERROR] 시도할 횟수는 숫자여야 합니다.",
+  NOT_ZERO: "[ERROR] 시도할 횟수는 0보다 커야합니다.",
+  NOT_INTEGER: "[ERROR] 시도할 횟수는 정수여야 합니다.",
+};
