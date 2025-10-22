@@ -1,10 +1,15 @@
-import { CarNameInput } from "./CarNameInput.js";
-import { CountInput } from "./CountInput.js";
-
+import { carNameInput } from "./carNameInput.js";
+import { countInput } from "./countInput.js";
+import { Console } from "@woowacourse/mission-utils";
 class App {
   async run() {
-    const carList = await CarNameInput();
-    const count = await CountInput();
+    try {
+      const carList = await carNameInput();
+      const count = await countInput();
+    } catch (error) {
+      Console.print(error.message);
+      throw error;
+    }
   }
 }
 
