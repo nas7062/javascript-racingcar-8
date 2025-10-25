@@ -2,9 +2,8 @@ import { Console } from "@woowacourse/mission-utils";
 import { RandomNumbers } from "./RandomNumbers.js";
 import Car from "./Car.js";
 
-export const raceGameResult = (carList, count) => {
+export const raceGameResult = (cars, count) => {
   Console.print("\n실행 결과");
-  const cars = carList.map((car) => new Car(car));
   for (let i = 0; i < count; i++) {
     cars.forEach((car) => {
       car.MoveForward(RandomNumbers());
