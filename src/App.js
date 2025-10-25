@@ -13,8 +13,8 @@ class App {
       const carList = await carNameInput();
       const count = await countInput();
       this.cars = carList.map((car) => new Car(car));
-      const result = raceGameResult(this.cars, count);
-      const winners = getWinners(this.cars);
+      raceGameResult(this.cars, count);
+      getWinners(this.cars);
     } catch (error) {
       Console.print(error.message);
       throw error;
