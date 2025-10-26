@@ -1,6 +1,8 @@
 export const MESSAGE = {
   CAR_INPUT: "경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)\n",
-  COUNT_INIPUT: "시도할 횟수는 몇 회인가요?\n",
+  COUNT_INPUT: "시도할 횟수는 몇 회인가요?\n",
+  GATE_START: "\n실행 결과",
+  WINNERS_PRINT : "최종 우승자 : "
 };
 
 export const CAR_VALIDATE = {
