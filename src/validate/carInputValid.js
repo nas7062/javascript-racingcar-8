@@ -4,7 +4,7 @@ import { CAR_VALIDATE } from "../constant/messages.js";
 //공백 X
 // 자동차 1개 이상
 // 5글자 이하
-export const CarInputValid = (carList) => {
+export const carInputValid = (carList) => {
   if (carList.length < 1) {
     throw new Error(CAR_VALIDATE.LENGTH_ZERO);
   }
